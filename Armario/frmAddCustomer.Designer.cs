@@ -33,23 +33,22 @@ namespace WinForm
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddCustomer));
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.txtAddress = new DevExpress.XtraEditors.TextEdit();
-            this.txtContactName = new DevExpress.XtraEditors.TextEdit();
-            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.txtPhone = new DevExpress.XtraEditors.TextEdit();
-            this.txtRegion = new DevExpress.XtraEditors.TextEdit();
             this.txtCompamyName = new DevExpress.XtraEditors.TextEdit();
+            this.txtContactName = new DevExpress.XtraEditors.TextEdit();
             this.txtContactTitle = new DevExpress.XtraEditors.TextEdit();
-            this.txtFax = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.txtCountry = new DevExpress.XtraEditors.TextEdit();
+            this.txtAddress = new DevExpress.XtraEditors.TextEdit();
+            this.txtRegion = new DevExpress.XtraEditors.TextEdit();
             this.txtCity = new DevExpress.XtraEditors.TextEdit();
+            this.txtCountry = new DevExpress.XtraEditors.TextEdit();
             this.txtPostalCode = new DevExpress.XtraEditors.TextEdit();
+            this.txtFax = new DevExpress.XtraEditors.TextEdit();
+            this.txtPhone = new DevExpress.XtraEditors.TextEdit();
+            this.btnSaveCustomer = new DevExpress.XtraEditors.SimpleButton();
+            this.btnReset = new DevExpress.XtraEditors.SimpleButton();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.LayoutCompanyName = new DevExpress.XtraLayout.LayoutControlItem();
             this.LayoutContactName = new DevExpress.XtraLayout.LayoutControlItem();
             this.LayoutContactTitle = new DevExpress.XtraLayout.LayoutControlItem();
-            this.LayoutAddress = new DevExpress.XtraLayout.LayoutControlItem();
             this.LayoutRegion = new DevExpress.XtraLayout.LayoutControlItem();
             this.LayoutCity = new DevExpress.XtraLayout.LayoutControlItem();
             this.LayoutCountry = new DevExpress.XtraLayout.LayoutControlItem();
@@ -57,30 +56,30 @@ namespace WinForm
             this.LayoutFax = new DevExpress.XtraLayout.LayoutControlItem();
             this.LayoutPhone = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.btnSaveCustomer = new DevExpress.XtraEditors.SimpleButton();
-            this.btnReset = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.LayoutAddress = new DevExpress.XtraLayout.LayoutControlItem();
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtContactName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRegion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCompamyName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContactName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtContactTitle.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFax.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCountry.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRegion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCity.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCountry.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPostalCode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFax.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutCompanyName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutContactName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutContactTitle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LayoutAddress)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutRegion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutCity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutCountry)).BeginInit();
@@ -90,8 +89,9 @@ namespace WinForm
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LayoutAddress)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -117,6 +117,144 @@ namespace WinForm
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // txtCompamyName
+            // 
+            this.txtCompamyName.Location = new System.Drawing.Point(110, 12);
+            this.txtCompamyName.Name = "txtCompamyName";
+            this.txtCompamyName.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtCompamyName.Properties.Appearance.Options.UseBackColor = true;
+            this.txtCompamyName.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.DarkRed;
+            this.txtCompamyName.Properties.AppearanceReadOnly.Options.UseForeColor = true;
+            this.txtCompamyName.Properties.MaxLength = 40;
+            this.txtCompamyName.Properties.NullValuePrompt = "Company Name";
+            this.txtCompamyName.Properties.NullValuePromptShowForEmptyValue = true;
+            this.txtCompamyName.Size = new System.Drawing.Size(233, 20);
+            this.txtCompamyName.StyleController = this.layoutControl1;
+            this.txtCompamyName.TabIndex = 4;
+            // 
+            // txtContactName
+            // 
+            this.txtContactName.Location = new System.Drawing.Point(445, 12);
+            this.txtContactName.Name = "txtContactName";
+            this.txtContactName.Properties.MaxLength = 30;
+            this.txtContactName.Properties.NullValuePrompt = "Contact Name";
+            this.txtContactName.Properties.NullValuePromptShowForEmptyValue = true;
+            this.txtContactName.Size = new System.Drawing.Size(227, 20);
+            this.txtContactName.StyleController = this.layoutControl1;
+            this.txtContactName.TabIndex = 4;
+            // 
+            // txtContactTitle
+            // 
+            this.txtContactTitle.Location = new System.Drawing.Point(110, 36);
+            this.txtContactTitle.Name = "txtContactTitle";
+            this.txtContactTitle.Properties.MaxLength = 30;
+            this.txtContactTitle.Properties.NullValuePrompt = "Contact Title";
+            this.txtContactTitle.Properties.NullValuePromptShowForEmptyValue = true;
+            this.txtContactTitle.Size = new System.Drawing.Size(233, 20);
+            this.txtContactTitle.StyleController = this.layoutControl1;
+            this.txtContactTitle.TabIndex = 4;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(445, 36);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Properties.MaxLength = 60;
+            this.txtAddress.Properties.NullValuePrompt = "Address";
+            this.txtAddress.Properties.NullValuePromptShowForEmptyValue = true;
+            this.txtAddress.Size = new System.Drawing.Size(227, 20);
+            this.txtAddress.StyleController = this.layoutControl1;
+            this.txtAddress.TabIndex = 4;
+            // 
+            // txtRegion
+            // 
+            this.txtRegion.Location = new System.Drawing.Point(445, 60);
+            this.txtRegion.Name = "txtRegion";
+            this.txtRegion.Properties.MaxLength = 15;
+            this.txtRegion.Properties.NullValuePrompt = "Region";
+            this.txtRegion.Properties.NullValuePromptShowForEmptyValue = true;
+            this.txtRegion.Size = new System.Drawing.Size(227, 20);
+            this.txtRegion.StyleController = this.layoutControl1;
+            this.txtRegion.TabIndex = 4;
+            // 
+            // txtCity
+            // 
+            this.txtCity.Location = new System.Drawing.Point(110, 60);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Properties.MaxLength = 15;
+            this.txtCity.Properties.NullValuePrompt = "City";
+            this.txtCity.Properties.NullValuePromptShowForEmptyValue = true;
+            this.txtCity.Size = new System.Drawing.Size(233, 20);
+            this.txtCity.StyleController = this.layoutControl1;
+            this.txtCity.TabIndex = 4;
+            // 
+            // txtCountry
+            // 
+            this.txtCountry.Location = new System.Drawing.Point(445, 84);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Properties.MaxLength = 15;
+            this.txtCountry.Properties.NullValuePrompt = "Country";
+            this.txtCountry.Properties.NullValuePromptShowForEmptyValue = true;
+            this.txtCountry.Size = new System.Drawing.Size(227, 20);
+            this.txtCountry.StyleController = this.layoutControl1;
+            this.txtCountry.TabIndex = 4;
+            // 
+            // txtPostalCode
+            // 
+            this.txtPostalCode.Location = new System.Drawing.Point(110, 84);
+            this.txtPostalCode.Name = "txtPostalCode";
+            this.txtPostalCode.Properties.MaxLength = 10;
+            this.txtPostalCode.Properties.NullValuePrompt = "Postal Code";
+            this.txtPostalCode.Properties.NullValuePromptShowForEmptyValue = true;
+            this.txtPostalCode.Size = new System.Drawing.Size(233, 20);
+            this.txtPostalCode.StyleController = this.layoutControl1;
+            this.txtPostalCode.TabIndex = 4;
+            // 
+            // txtFax
+            // 
+            this.txtFax.Location = new System.Drawing.Point(445, 108);
+            this.txtFax.Name = "txtFax";
+            this.txtFax.Properties.MaxLength = 24;
+            this.txtFax.Properties.NullValuePrompt = "Fax";
+            this.txtFax.Properties.NullValuePromptShowForEmptyValue = true;
+            this.txtFax.Size = new System.Drawing.Size(227, 20);
+            this.txtFax.StyleController = this.layoutControl1;
+            this.txtFax.TabIndex = 4;
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(110, 108);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Properties.MaxLength = 24;
+            this.txtPhone.Properties.NullValuePrompt = "Phone";
+            this.txtPhone.Properties.NullValuePromptShowForEmptyValue = true;
+            this.txtPhone.Size = new System.Drawing.Size(233, 20);
+            this.txtPhone.StyleController = this.layoutControl1;
+            this.txtPhone.TabIndex = 4;
+            // 
+            // btnSaveCustomer
+            // 
+            this.btnSaveCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveCustomer.ImageOptions.Image")));
+            this.btnSaveCustomer.Location = new System.Drawing.Point(530, 166);
+            this.btnSaveCustomer.Name = "btnSaveCustomer";
+            this.btnSaveCustomer.Size = new System.Drawing.Size(69, 22);
+            this.btnSaveCustomer.StyleController = this.layoutControl1;
+            this.btnSaveCustomer.TabIndex = 5;
+            this.btnSaveCustomer.Text = "Save";
+            this.btnSaveCustomer.ToolTip = "Save";
+            this.btnSaveCustomer.Click += new System.EventHandler(this.btnSaveCustomer_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageOptions.Image")));
+            this.btnReset.Location = new System.Drawing.Point(603, 166);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(69, 22);
+            this.btnReset.StyleController = this.layoutControl1;
+            this.btnReset.TabIndex = 6;
+            this.btnReset.Text = "Reset";
+            this.btnReset.ToolTip = "Reset";
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -141,136 +279,28 @@ namespace WinForm
             this.Root.Size = new System.Drawing.Size(684, 215);
             this.Root.TextVisible = false;
             // 
-            // txtAddress
-            // 
-            this.txtAddress.Location = new System.Drawing.Point(433, 36);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Properties.MaxLength = 60;
-            this.txtAddress.Size = new System.Drawing.Size(239, 20);
-            this.txtAddress.StyleController = this.layoutControl1;
-            this.txtAddress.TabIndex = 4;
-            // 
-            // txtContactName
-            // 
-            this.txtContactName.Location = new System.Drawing.Point(433, 12);
-            this.txtContactName.Name = "txtContactName";
-            this.txtContactName.Properties.MaxLength = 30;
-            this.txtContactName.Size = new System.Drawing.Size(239, 20);
-            this.txtContactName.StyleController = this.layoutControl1;
-            this.txtContactName.TabIndex = 4;
-            // 
-            // btnSave
-            // 
-            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
-            this.btnSave.Location = new System.Drawing.Point(1269, 212);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(74, 22);
-            this.btnSave.TabIndex = 5;
-            this.btnSave.Text = "Save";
-            this.btnSave.ToolTip = "Save";
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.Location = new System.Drawing.Point(98, 108);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Properties.MaxLength = 24;
-            this.txtPhone.Size = new System.Drawing.Size(245, 20);
-            this.txtPhone.StyleController = this.layoutControl1;
-            this.txtPhone.TabIndex = 4;
-            // 
-            // txtRegion
-            // 
-            this.txtRegion.Location = new System.Drawing.Point(433, 60);
-            this.txtRegion.Name = "txtRegion";
-            this.txtRegion.Properties.MaxLength = 15;
-            this.txtRegion.Size = new System.Drawing.Size(239, 20);
-            this.txtRegion.StyleController = this.layoutControl1;
-            this.txtRegion.TabIndex = 4;
-            // 
-            // txtCompamyName
-            // 
-            this.txtCompamyName.Location = new System.Drawing.Point(98, 12);
-            this.txtCompamyName.Name = "txtCompamyName";
-            this.txtCompamyName.Properties.MaxLength = 40;
-            this.txtCompamyName.Size = new System.Drawing.Size(245, 20);
-            this.txtCompamyName.StyleController = this.layoutControl1;
-            this.txtCompamyName.TabIndex = 4;
-            // 
-            // txtContactTitle
-            // 
-            this.txtContactTitle.Location = new System.Drawing.Point(98, 36);
-            this.txtContactTitle.Name = "txtContactTitle";
-            this.txtContactTitle.Properties.MaxLength = 30;
-            this.txtContactTitle.Size = new System.Drawing.Size(245, 20);
-            this.txtContactTitle.StyleController = this.layoutControl1;
-            this.txtContactTitle.TabIndex = 4;
-            // 
-            // txtFax
-            // 
-            this.txtFax.Location = new System.Drawing.Point(433, 108);
-            this.txtFax.Name = "txtFax";
-            this.txtFax.Properties.MaxLength = 24;
-            this.txtFax.Size = new System.Drawing.Size(239, 20);
-            this.txtFax.StyleController = this.layoutControl1;
-            this.txtFax.TabIndex = 4;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(1347, 212);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 22);
-            this.simpleButton1.TabIndex = 6;
-            this.simpleButton1.Text = "Cancel";
-            this.simpleButton1.ToolTip = "Cancel";
-            // 
-            // txtCountry
-            // 
-            this.txtCountry.Location = new System.Drawing.Point(433, 84);
-            this.txtCountry.Name = "txtCountry";
-            this.txtCountry.Properties.MaxLength = 15;
-            this.txtCountry.Size = new System.Drawing.Size(239, 20);
-            this.txtCountry.StyleController = this.layoutControl1;
-            this.txtCountry.TabIndex = 4;
-            // 
-            // txtCity
-            // 
-            this.txtCity.Location = new System.Drawing.Point(98, 60);
-            this.txtCity.Name = "txtCity";
-            this.txtCity.Properties.MaxLength = 15;
-            this.txtCity.Size = new System.Drawing.Size(245, 20);
-            this.txtCity.StyleController = this.layoutControl1;
-            this.txtCity.TabIndex = 4;
-            // 
-            // txtPostalCode
-            // 
-            this.txtPostalCode.Location = new System.Drawing.Point(98, 84);
-            this.txtPostalCode.Name = "txtPostalCode";
-            this.txtPostalCode.Properties.MaxLength = 10;
-            this.txtPostalCode.Size = new System.Drawing.Size(245, 20);
-            this.txtPostalCode.StyleController = this.layoutControl1;
-            this.txtPostalCode.TabIndex = 4;
-            // 
             // LayoutCompanyName
             // 
+            this.LayoutCompanyName.AllowHtmlStringInCaption = true;
             this.LayoutCompanyName.Control = this.txtCompamyName;
             this.LayoutCompanyName.CustomizationFormText = "Company Name :";
             this.LayoutCompanyName.Location = new System.Drawing.Point(0, 0);
             this.LayoutCompanyName.Name = "LayoutCompanyName";
             this.LayoutCompanyName.OptionsToolTip.ToolTip = "Company Name :";
             this.LayoutCompanyName.Size = new System.Drawing.Size(335, 24);
-            this.LayoutCompanyName.Text = "Company Name :";
-            this.LayoutCompanyName.TextSize = new System.Drawing.Size(82, 13);
+            this.LayoutCompanyName.Text = "Company Name : <color=red>*</color>";
+            this.LayoutCompanyName.TextSize = new System.Drawing.Size(95, 13);
             // 
             // LayoutContactName
             // 
+            this.LayoutContactName.AllowHtmlStringInCaption = true;
             this.LayoutContactName.Control = this.txtContactName;
             this.LayoutContactName.CustomizationFormText = "txtContactName";
             this.LayoutContactName.Location = new System.Drawing.Point(335, 0);
             this.LayoutContactName.Name = "LayoutContactName";
             this.LayoutContactName.Size = new System.Drawing.Size(329, 24);
-            this.LayoutContactName.Text = "Contact Name :";
-            this.LayoutContactName.TextSize = new System.Drawing.Size(82, 13);
+            this.LayoutContactName.Text = "Contact Name : <color=red>*</color>";
+            this.LayoutContactName.TextSize = new System.Drawing.Size(95, 13);
             // 
             // LayoutContactTitle
             // 
@@ -279,18 +309,8 @@ namespace WinForm
             this.LayoutContactTitle.Location = new System.Drawing.Point(0, 24);
             this.LayoutContactTitle.Name = "LayoutContactTitle";
             this.LayoutContactTitle.Size = new System.Drawing.Size(335, 24);
-            this.LayoutContactTitle.Text = "Contact Title :";
-            this.LayoutContactTitle.TextSize = new System.Drawing.Size(82, 13);
-            // 
-            // LayoutAddress
-            // 
-            this.LayoutAddress.Control = this.txtAddress;
-            this.LayoutAddress.CustomizationFormText = "txtAddress";
-            this.LayoutAddress.Location = new System.Drawing.Point(335, 24);
-            this.LayoutAddress.Name = "LayoutAddress";
-            this.LayoutAddress.Size = new System.Drawing.Size(329, 24);
-            this.LayoutAddress.Text = "Address :";
-            this.LayoutAddress.TextSize = new System.Drawing.Size(82, 13);
+            this.LayoutContactTitle.Text = "Contact Title :         ";
+            this.LayoutContactTitle.TextSize = new System.Drawing.Size(95, 13);
             // 
             // LayoutRegion
             // 
@@ -300,7 +320,7 @@ namespace WinForm
             this.LayoutRegion.Name = "LayoutRegion";
             this.LayoutRegion.Size = new System.Drawing.Size(329, 24);
             this.LayoutRegion.Text = "Region :";
-            this.LayoutRegion.TextSize = new System.Drawing.Size(82, 13);
+            this.LayoutRegion.TextSize = new System.Drawing.Size(95, 13);
             // 
             // LayoutCity
             // 
@@ -310,7 +330,7 @@ namespace WinForm
             this.LayoutCity.Name = "LayoutCity";
             this.LayoutCity.Size = new System.Drawing.Size(335, 24);
             this.LayoutCity.Text = "City :";
-            this.LayoutCity.TextSize = new System.Drawing.Size(82, 13);
+            this.LayoutCity.TextSize = new System.Drawing.Size(95, 13);
             // 
             // LayoutCountry
             // 
@@ -321,7 +341,7 @@ namespace WinForm
             this.LayoutCountry.Name = "LayoutCountry";
             this.LayoutCountry.Size = new System.Drawing.Size(329, 24);
             this.LayoutCountry.Text = "Country :";
-            this.LayoutCountry.TextSize = new System.Drawing.Size(82, 13);
+            this.LayoutCountry.TextSize = new System.Drawing.Size(95, 13);
             // 
             // LayoutPostalCode
             // 
@@ -331,7 +351,7 @@ namespace WinForm
             this.LayoutPostalCode.Name = "LayoutPostalCode";
             this.LayoutPostalCode.Size = new System.Drawing.Size(335, 24);
             this.LayoutPostalCode.Text = "Postal Code :";
-            this.LayoutPostalCode.TextSize = new System.Drawing.Size(82, 13);
+            this.LayoutPostalCode.TextSize = new System.Drawing.Size(95, 13);
             // 
             // LayoutFax
             // 
@@ -341,7 +361,7 @@ namespace WinForm
             this.LayoutFax.Name = "LayoutFax";
             this.LayoutFax.Size = new System.Drawing.Size(329, 24);
             this.LayoutFax.Text = "Fax :";
-            this.LayoutFax.TextSize = new System.Drawing.Size(82, 13);
+            this.LayoutFax.TextSize = new System.Drawing.Size(95, 13);
             // 
             // LayoutPhone
             // 
@@ -351,7 +371,7 @@ namespace WinForm
             this.LayoutPhone.Name = "LayoutPhone";
             this.LayoutPhone.Size = new System.Drawing.Size(335, 24);
             this.LayoutPhone.Text = "Phone :";
-            this.LayoutPhone.TextSize = new System.Drawing.Size(82, 13);
+            this.LayoutPhone.TextSize = new System.Drawing.Size(95, 13);
             // 
             // emptySpaceItem2
             // 
@@ -362,30 +382,6 @@ namespace WinForm
             this.emptySpaceItem2.Size = new System.Drawing.Size(664, 34);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // btnSaveCustomer
-            // 
-            this.btnSaveCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.btnSaveCustomer.Location = new System.Drawing.Point(530, 166);
-            this.btnSaveCustomer.Name = "btnSaveCustomer";
-            this.btnSaveCustomer.Size = new System.Drawing.Size(69, 22);
-            this.btnSaveCustomer.StyleController = this.layoutControl1;
-            this.btnSaveCustomer.TabIndex = 5;
-            this.btnSaveCustomer.Text = "Save";
-            this.btnSaveCustomer.ToolTip = "Save";
-            this.btnSaveCustomer.Click += new System.EventHandler(this.btnSaveCustomer_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.btnReset.Location = new System.Drawing.Point(603, 166);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(69, 22);
-            this.btnReset.StyleController = this.layoutControl1;
-            this.btnReset.TabIndex = 6;
-            this.btnReset.Text = "Reset";
-            this.btnReset.ToolTip = "Reset";
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.btnSaveCustomer;
@@ -393,7 +389,6 @@ namespace WinForm
             this.layoutControlItem2.Location = new System.Drawing.Point(518, 154);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(73, 26);
-            this.layoutControlItem2.Text = "layoutControlItem2";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -404,9 +399,16 @@ namespace WinForm
             this.layoutControlItem3.Location = new System.Drawing.Point(591, 154);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(73, 26);
-            this.layoutControlItem3.Text = "layoutControlItem3";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 180);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(664, 15);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem3
             // 
@@ -418,13 +420,35 @@ namespace WinForm
             this.emptySpaceItem3.Text = "emptySpaceItem1";
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // emptySpaceItem1
+            // LayoutAddress
             // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 180);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(664, 15);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.LayoutAddress.Control = this.txtAddress;
+            this.LayoutAddress.CustomizationFormText = "txtAddress";
+            this.LayoutAddress.Location = new System.Drawing.Point(335, 24);
+            this.LayoutAddress.Name = "LayoutAddress";
+            this.LayoutAddress.Size = new System.Drawing.Size(329, 24);
+            this.LayoutAddress.Text = "Address :";
+            this.LayoutAddress.TextSize = new System.Drawing.Size(95, 13);
+            // 
+            // btnSave
+            // 
+            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
+            this.btnSave.Location = new System.Drawing.Point(1269, 212);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(74, 22);
+            this.btnSave.TabIndex = 5;
+            this.btnSave.Text = "Save";
+            this.btnSave.ToolTip = "Save";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(1347, 212);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(75, 22);
+            this.simpleButton1.TabIndex = 6;
+            this.simpleButton1.Text = "Cancel";
+            this.simpleButton1.ToolTip = "Cancel";
             // 
             // frmAddCustomer
             // 
@@ -443,21 +467,20 @@ namespace WinForm
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtContactName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRegion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCompamyName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContactName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtContactTitle.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFax.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCountry.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRegion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCity.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCountry.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPostalCode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFax.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutCompanyName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutContactName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutContactTitle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LayoutAddress)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutRegion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutCity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutCountry)).EndInit();
@@ -467,8 +490,9 @@ namespace WinForm
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LayoutAddress)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -33,6 +33,19 @@ namespace WinForm
         private void btnSaveCustomer_Click(object sender, EventArgs e)
         {
             var ObjCustomer = new Customer();
+            //bool Validate = true;
+            if (string.IsNullOrEmpty(txtCompamyName.Text))
+            {
+                XtraMessageBox.Show("Please enter company name.", Utility.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //Validate = false;
+                return;
+            }
+            if (string.IsNullOrEmpty(txtContactName.Text))
+            {
+                XtraMessageBox.Show("Please enter contact name.", Utility.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //Validate = false;
+                return;
+            }
             ObjCustomer.CompanyName = txtCompamyName.Text;
             ObjCustomer.ContactName = txtContactName.Text;
             ObjCustomer.ContactTitle = txtContactTitle.Text;
@@ -43,6 +56,7 @@ namespace WinForm
             ObjCustomer.Country = txtCountry.Text;
             ObjCustomer.Phone = txtPhone.Text;
             ObjCustomer.Fax = txtFax.Text;
+
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -60,5 +74,7 @@ namespace WinForm
 
 
         }
+
+       
     }
 }
