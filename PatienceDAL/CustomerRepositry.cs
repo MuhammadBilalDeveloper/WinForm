@@ -60,6 +60,21 @@ namespace WinFormDAL
                 throw ex;
             }
         }
+        public int DeleteCustomer(Customer customer)
+        {
+            try
+            {
+                string constr = ConfigurationManager.ConnectionStrings["ConnectionString_SQLServer"].ConnectionString;
+                List<SqlParameter> parameters = new List<SqlParameter>();
+                parameters.Add(new SqlParameter("@pCustomerID", customer.CustomerID));
+                int rowsAffected = SqlHelper.ExecuteNonQuery(constr, CommandType.StoredProcedure, "[dbo].[UspDeleteCustomers]", parameters.ToArray());
+                return rowsAffected;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 
 }

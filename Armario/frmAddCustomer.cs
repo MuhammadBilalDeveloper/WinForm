@@ -16,6 +16,7 @@ namespace WinForm
     public partial class frmAddCustomer : DevExpress.XtraEditors.XtraForm
     {
         private readonly ICustomerRepositry _customerRepositry;
+        private  string _customerID;
         public frmAddCustomer(ICustomerRepositry customerRepositry)
         {
             InitializeComponent();
@@ -52,7 +53,7 @@ namespace WinForm
                     return;
                 }
                 ObjCustomer.CompanyName = txtCompamyName.Text;
-                var CustomerID = txtCompamyName.Text.Trim();
+                var CustomerID = string.IsNullOrEmpty(_customerID)? txtCompamyName.Text.Trim():_customerID;
                 var length = txtCompamyName.Text.Length > 5 ? 5 : txtCompamyName.Text.Length;
                 ObjCustomer.CustomerID = RemoveWhitespace(CustomerID).Substring(0, length).ToUpper();
                 ObjCustomer.ContactName = txtContactName.Text;
@@ -90,11 +91,25 @@ namespace WinForm
 
 
         }
-        public static string RemoveWhitespace(string input)
+        private static string RemoveWhitespace(string input)
         {
             return new string(input.ToCharArray()
                 .Where(c => !Char.IsWhiteSpace(c))
                 .ToArray());
+        }
+        public void InitCustomer(Customer customer)
+        {
+            _customerID = customer.CustomerID.Trim();
+            txtCompamyName.Text = customer.CompanyName.Trim();
+            txtContactName.Text = customer.ContactName.Trim();
+            txtContactTitle.Text = customer.ContactTitle.Trim();
+            txtAddress.Text = customer.Address.Trim();
+            txtCity.Text = customer.City.Trim();
+            txtRegion.Text = customer.Region.Trim();
+            txtPostalCode.Text = customer.PostalCode.Trim();
+            txtCountry.Text = customer.Country.Trim();
+            txtPhone.Text = customer.Phone.Trim();
+            txtFax.Text = customer.Fax.Trim();
         }
 
 

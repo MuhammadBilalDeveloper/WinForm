@@ -57,15 +57,27 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.txtPhone = new DevExpress.XtraLayout.LayoutControlItem();
-            this.btndelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
             this.gridCustomers = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.CustomerID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.CompanyName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ContactName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ContactTitle = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Address = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.City = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Region = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.PostalCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Country = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Phone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Fax = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColDelete = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.btnDelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.ColEdit = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -98,7 +110,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPhone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btndelete)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -110,7 +121,8 @@
             this.layoutControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
@@ -318,16 +330,6 @@
             this.txtPhone.Text = "Phone :";
             this.txtPhone.TextSize = new System.Drawing.Size(82, 13);
             // 
-            // btndelete
-            // 
-            this.btndelete.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
-            this.btndelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Delete", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "Delete this row", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.btndelete.Name = "btndelete";
-            this.btndelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.btndelete.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btndelete_ButtonClick_1);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.splitContainer1);
@@ -384,7 +386,8 @@
             this.gridCustomers.MainView = this.gridView1;
             this.gridCustomers.Name = "gridCustomers";
             this.gridCustomers.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemButtonEdit1});
+            this.btnDelete,
+            this.btnEdit});
             this.gridCustomers.Size = new System.Drawing.Size(1403, 549);
             this.gridCustomers.TabIndex = 14;
             this.gridCustomers.UseEmbeddedNavigator = true;
@@ -395,30 +398,161 @@
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ColDelete});
+            this.CustomerID,
+            this.CompanyName,
+            this.ContactName,
+            this.ContactTitle,
+            this.Address,
+            this.City,
+            this.Region,
+            this.PostalCode,
+            this.Country,
+            this.Phone,
+            this.Fax,
+            this.ColDelete,
+            this.ColEdit});
             this.gridView1.GridControl = this.gridCustomers;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
             // 
+            // CustomerID
+            // 
+            this.CustomerID.Caption = "Customer ID";
+            this.CustomerID.FieldName = "CustomerID";
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.Visible = true;
+            this.CustomerID.VisibleIndex = 0;
+            this.CustomerID.Width = 109;
+            // 
+            // CompanyName
+            // 
+            this.CompanyName.Caption = "Company Name";
+            this.CompanyName.FieldName = "CompanyName";
+            this.CompanyName.Name = "CompanyName";
+            this.CompanyName.Visible = true;
+            this.CompanyName.VisibleIndex = 1;
+            this.CompanyName.Width = 109;
+            // 
+            // ContactName
+            // 
+            this.ContactName.Caption = "Contact Name";
+            this.ContactName.FieldName = "ContactName";
+            this.ContactName.Name = "ContactName";
+            this.ContactName.Visible = true;
+            this.ContactName.VisibleIndex = 2;
+            this.ContactName.Width = 109;
+            // 
+            // ContactTitle
+            // 
+            this.ContactTitle.Caption = "Contact Title";
+            this.ContactTitle.FieldName = "ContactTitle";
+            this.ContactTitle.Name = "ContactTitle";
+            this.ContactTitle.Visible = true;
+            this.ContactTitle.VisibleIndex = 3;
+            this.ContactTitle.Width = 109;
+            // 
+            // Address
+            // 
+            this.Address.Caption = "Address";
+            this.Address.FieldName = "Address";
+            this.Address.Name = "Address";
+            this.Address.Visible = true;
+            this.Address.VisibleIndex = 4;
+            this.Address.Width = 109;
+            // 
+            // City
+            // 
+            this.City.Caption = "City";
+            this.City.FieldName = "City";
+            this.City.Name = "City";
+            this.City.Visible = true;
+            this.City.VisibleIndex = 5;
+            this.City.Width = 109;
+            // 
+            // Region
+            // 
+            this.Region.Caption = "Region";
+            this.Region.FieldName = "Region";
+            this.Region.Name = "Region";
+            this.Region.Visible = true;
+            this.Region.VisibleIndex = 6;
+            this.Region.Width = 109;
+            // 
+            // PostalCode
+            // 
+            this.PostalCode.Caption = "Postal Code";
+            this.PostalCode.FieldName = "PostalCode";
+            this.PostalCode.Name = "PostalCode";
+            this.PostalCode.Visible = true;
+            this.PostalCode.VisibleIndex = 7;
+            this.PostalCode.Width = 109;
+            // 
+            // Country
+            // 
+            this.Country.Caption = "Country";
+            this.Country.FieldName = "Country";
+            this.Country.Name = "Country";
+            this.Country.Visible = true;
+            this.Country.VisibleIndex = 8;
+            this.Country.Width = 109;
+            // 
+            // Phone
+            // 
+            this.Phone.Caption = "Phone";
+            this.Phone.FieldName = "Phone";
+            this.Phone.Name = "Phone";
+            this.Phone.Visible = true;
+            this.Phone.VisibleIndex = 9;
+            this.Phone.Width = 109;
+            // 
+            // Fax
+            // 
+            this.Fax.Caption = "Fax";
+            this.Fax.FieldName = "Fax";
+            this.Fax.Name = "Fax";
+            this.Fax.Visible = true;
+            this.Fax.VisibleIndex = 10;
+            this.Fax.Width = 188;
+            // 
             // ColDelete
             // 
-            this.ColDelete.ColumnEdit = this.repositoryItemButtonEdit1;
+            this.ColDelete.ColumnEdit = this.btnDelete;
             this.ColDelete.Name = "ColDelete";
             this.ColDelete.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways;
             this.ColDelete.UnboundType = DevExpress.Data.UnboundColumnType.Object;
             this.ColDelete.Visible = true;
-            this.ColDelete.VisibleIndex = 0;
+            this.ColDelete.VisibleIndex = 12;
+            this.ColDelete.Width = 57;
             // 
-            // repositoryItemButtonEdit1
+            // btnDelete
             // 
-            this.repositoryItemButtonEdit1.AutoHeight = false;
+            this.btnDelete.AutoHeight = false;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            this.btnDelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "Delete this row", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btnDelete.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.repositoryItemButtonEdit1_ButtonClick);
+            // 
+            // ColEdit
+            // 
+            this.ColEdit.ColumnEdit = this.btnEdit;
+            this.ColEdit.Name = "ColEdit";
+            this.ColEdit.UnboundType = DevExpress.Data.UnboundColumnType.Object;
+            this.ColEdit.Visible = true;
+            this.ColEdit.VisibleIndex = 11;
+            this.ColEdit.Width = 50;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.AutoHeight = false;
             editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
-            this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
-            this.repositoryItemButtonEdit1.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.repositoryItemButtonEdit1_ButtonClick);
+            this.btnEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "Edit this Row", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
             // gridView3
             // 
@@ -574,7 +708,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPhone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btndelete)).EndInit();
             this.panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -586,7 +719,8 @@
             this.layoutControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridCustomers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
@@ -646,8 +780,20 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.LayoutControlItem txtPhone;
        
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btndelete;
         private DevExpress.XtraGrid.Columns.GridColumn ColDelete;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnDelete;
+        private DevExpress.XtraGrid.Columns.GridColumn CustomerID;
+        private DevExpress.XtraGrid.Columns.GridColumn CompanyName;
+        private DevExpress.XtraGrid.Columns.GridColumn ContactName;
+        private DevExpress.XtraGrid.Columns.GridColumn ContactTitle;
+        private DevExpress.XtraGrid.Columns.GridColumn Address;
+        private DevExpress.XtraGrid.Columns.GridColumn City;
+        private DevExpress.XtraGrid.Columns.GridColumn Region;
+        private DevExpress.XtraGrid.Columns.GridColumn PostalCode;
+        private DevExpress.XtraGrid.Columns.GridColumn Country;
+        private DevExpress.XtraGrid.Columns.GridColumn Phone;
+        private DevExpress.XtraGrid.Columns.GridColumn Fax;
+        private DevExpress.XtraGrid.Columns.GridColumn ColEdit;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnEdit;
     }
 }

@@ -97,8 +97,7 @@ namespace WinForm
 
         private void btndelete_ButtonClick_1(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
-            DataRow selectedRow = this.gridView1.GetDataRow(this.gridView1.FocusedRowHandle);
-            var CustomerID = selectedRow["CustomerID"].ToString();
+
         }
 
         private void repositoryItemButtonEdit1_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
@@ -111,8 +110,53 @@ namespace WinForm
 
             if (e.Column == ColDelete)
             {
+                DataRow selectedRow = this.gridView1.GetDataRow(this.gridView1.FocusedRowHandle);
+                var CustomerID = selectedRow["CustomerID"].ToString();
+                var dlg = XtraMessageBox.Show("Are you sure to delete the selected Customer?", Utility.ApplicationName, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dlg == DialogResult.Yes)
+                {
+                    _customerRepositry.DeleteCustomer( new Customer() 
+                        { 
+                            CustomerID = CustomerID
+                        });
+
+                    gridView1.DeleteSelectedRows();
+                }
+
+            }
+            if (e.Column == ColEdit)
+            {
+                DataRow selectedRow = this.gridView1.GetDataRow(this.gridView1.FocusedRowHandle);
                 
+                var objfrmAddCustomer = frmAddCustomer.Getinstance;
+                objfrmAddCustomer.InitCustomer(new Customer()
+                {
+                    CustomerID = selectedRow["CustomerID"].ToString(),
+                    CompanyName = selectedRow["CompanyName"].ToString(),
+                    ContactName = selectedRow["ContactName"].ToString(),
+                    ContactTitle = selectedRow["ContactTitle"].ToString(),
+                    Address = selectedRow["Address"].ToString(),
+                    City = selectedRow["City"].ToString(),
+                    Region = selectedRow["Region"].ToString(),
+                    PostalCode = selectedRow["PostalCode"].ToString(),
+                    Country = selectedRow["Country"].ToString(),
+                    Phone = selectedRow["Phone"].ToString(),
+                    Fax = selectedRow["Fax"].ToString()
+                });
+                DialogResult dr = objfrmAddCustomer.ShowDialog(this);
+                if (dr == DialogResult.Cancel)
+                {
+                    objfrmAddCustomer.Close();
+                }
+                else if (dr == DialogResult.OK)
+                {
+
+                    objfrmAddCustomer.Close();
+                }
+                btnSearch_Click(null, null);
             }
         }
+
+
     }
 }
