@@ -38,7 +38,7 @@ namespace WinForm
             try
             {
                 DataTable dtInvoice = _invoiceRepositry.GetInvoice();
-                gridControlInvoices.DataSource = dtInvoice;
+                pivotGridControl1.DataSource = dtInvoice;
 
             }
             catch (Exception ex)
