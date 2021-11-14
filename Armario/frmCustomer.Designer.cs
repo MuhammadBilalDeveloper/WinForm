@@ -30,6 +30,16 @@
         {
             DevExpress.XtraLayout.LayoutControlItem txtfax;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomer));
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
             this.layoutControl5 = new DevExpress.XtraLayout.LayoutControl();
             this.btnReset = new DevExpress.XtraEditors.SimpleButton();
@@ -53,6 +63,12 @@
             this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
             this.gridCustomers = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.CustomerID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.CompanyName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ContactName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDelete = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btndelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -67,6 +83,7 @@
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.gridColumndelete = new DevExpress.XtraGrid.Columns.GridColumn();
             txtfax = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(txtfax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
@@ -96,6 +113,8 @@
             this.layoutControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btndelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
@@ -151,7 +170,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnReset.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageOptions.Image")));
             this.btnReset.Location = new System.Drawing.Point(1347, 212);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 22);
@@ -358,6 +377,9 @@
             this.gridCustomers.Location = new System.Drawing.Point(12, 12);
             this.gridCustomers.MainView = this.gridView1;
             this.gridCustomers.Name = "gridCustomers";
+            this.gridCustomers.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemButtonEdit1,
+            this.btndelete});
             this.gridCustomers.Size = new System.Drawing.Size(1403, 549);
             this.gridCustomers.TabIndex = 14;
             this.gridCustomers.UseEmbeddedNavigator = true;
@@ -367,10 +389,62 @@
             // 
             // gridView1
             // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.CustomerID,
+            this.CompanyName,
+            this.ContactName,
+            this.colDelete});
             this.gridView1.GridControl = this.gridCustomers;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // CustomerID
+            // 
+            this.CustomerID.Caption = "CustomerID";
+            this.CustomerID.FieldName = "CustomerID";
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.Visible = true;
+            this.CustomerID.VisibleIndex = 0;
+            this.CustomerID.Width = 95;
+            // 
+            // CompanyName
+            // 
+            this.CompanyName.Caption = "CompanyName";
+            this.CompanyName.FieldName = "CompanyName";
+            this.CompanyName.Name = "CompanyName";
+            this.CompanyName.Visible = true;
+            this.CompanyName.VisibleIndex = 1;
+            this.CompanyName.Width = 124;
+            // 
+            // ContactName
+            // 
+            this.ContactName.Caption = "ContactName";
+            this.ContactName.FieldName = "ContactName";
+            this.ContactName.Name = "ContactName";
+            this.ContactName.Visible = true;
+            this.ContactName.VisibleIndex = 2;
+            this.ContactName.Width = 1124;
+            // 
+            // colDelete
+            // 
+            this.colDelete.ColumnEdit = this.btndelete;
+            this.colDelete.FieldName = "colDelete";
+            this.colDelete.Name = "colDelete";
+            this.colDelete.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways;
+            this.colDelete.UnboundType = DevExpress.Data.UnboundColumnType.Object;
+            this.colDelete.Visible = true;
+            this.colDelete.VisibleIndex = 3;
+            // 
+            // btndelete
+            // 
+            this.btndelete.AutoHeight = false;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            this.btndelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.btndelete.Name = "btndelete";
+            this.btndelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btndelete.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnDelete_ButtonClick);
             // 
             // gridView3
             // 
@@ -497,6 +571,16 @@
             this.groupControl2.TabIndex = 4;
             this.groupControl2.Text = "Recommended Coins";
             // 
+            // gridColumndelete
+            // 
+            this.gridColumndelete.ColumnEdit = this.repositoryItemButtonEdit1;
+            this.gridColumndelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumndelete.ImageOptions.Image")));
+            this.gridColumndelete.Name = "gridColumndelete";
+            this.gridColumndelete.OptionsColumn.FixedWidth = true;
+            this.gridColumndelete.Visible = true;
+            this.gridColumndelete.VisibleIndex = 3;
+            this.gridColumndelete.Width = 42;
+            // 
             // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -537,6 +621,8 @@
             this.layoutControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridCustomers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btndelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
@@ -595,5 +681,12 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.LayoutControlItem txtPhone;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
+        private DevExpress.XtraGrid.Columns.GridColumn CustomerID;
+        private DevExpress.XtraGrid.Columns.GridColumn CompanyName;
+        private DevExpress.XtraGrid.Columns.GridColumn ContactName;
+        private DevExpress.XtraGrid.Columns.GridColumn colDelete;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btndelete;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumndelete;
     }
 }

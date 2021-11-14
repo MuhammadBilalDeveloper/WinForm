@@ -74,6 +74,7 @@ namespace WinForm
 
                 objfrmAddCustomer.Close();
             }
+            btnSearch_Click(null, null);
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -87,7 +88,13 @@ namespace WinForm
             DataTable dtCustomer = _customerRepositry.GetCustomer(ObjCustomer);
             gridCustomers.DataSource = dtCustomer;
         }
+        private void btnDelete_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            DataRow selectedRow = this.gridView1.GetDataRow(this.gridView1.FocusedRowHandle);
+            var CustomerID = selectedRow["CustomerID"].ToString();
 
-        
+        }
+
+
     }
 }

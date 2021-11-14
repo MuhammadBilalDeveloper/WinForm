@@ -11,5 +11,6 @@ namespace WinFormDAL
     public interface ICustomerRepositry
     {
        DataTable GetCustomer(Customer customer);
+       int  SaveUpdateCustomer(Customer customer);
     }
 }
