@@ -95,6 +95,24 @@ namespace WinForm
 
         }
 
+        private void btndelete_ButtonClick_1(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            DataRow selectedRow = this.gridView1.GetDataRow(this.gridView1.FocusedRowHandle);
+            var CustomerID = selectedRow["CustomerID"].ToString();
+        }
 
+        private void repositoryItemButtonEdit1_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+
+        }
+
+        private void gridView1_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        {
+
+            if (e.Column == ColDelete)
+            {
+                
+            }
+        }
     }
 }
