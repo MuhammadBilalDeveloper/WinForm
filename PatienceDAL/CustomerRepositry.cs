@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -14,6 +15,7 @@ namespace WinFormDAL
         {
             try
             {
+               
                 DataSet ds = new DataSet();
                 string constr = ConfigurationManager.ConnectionStrings["ConnectionString_SQLServer"].ConnectionString;
                 List<SqlParameter> parameters = new List<SqlParameter>();
@@ -28,6 +30,7 @@ namespace WinFormDAL
                 if (!string.IsNullOrEmpty(customer.Fax))
                     parameters.Add(new SqlParameter("@pFax", customer.Fax));
                 ds = SqlHelper.ExecuteDataset(constr, CommandType.StoredProcedure, "[dbo].[UspGetCustomers]", parameters.ToArray());
+             
                 return ds.Tables[0];
             }
             catch (Exception ex)
@@ -35,6 +38,32 @@ namespace WinFormDAL
                 throw ex;
             }
         }
+        //public DataTable GetCustomerMySQL(Customer customer)
+        //{
+        //    try
+        //    {
+
+        //        DataSet ds = new DataSet();
+        //        string constr = ConfigurationManager.ConnectionStrings["ConnectionString_MySQLServer"].ConnectionString;
+        //        List<MySqlParameter> parameters = new List<MySqlParameter>();
+        //        if (!string.IsNullOrEmpty(customer.CompanyName))
+        //        parameters.Add(new MySqlParameter("pCompanyName", customer.CompanyName));
+        //        if (!string.IsNullOrEmpty(customer.ContactName))
+        //        parameters.Add(new MySqlParameter("pContactName", customer.ContactName));
+        //        if (!string.IsNullOrEmpty(customer.ContactTitle))
+        //        parameters.Add(new MySqlParameter("pContactTitle", customer.ContactTitle));
+        //        if (!string.IsNullOrEmpty(customer.Phone))
+        //        parameters.Add(new MySqlParameter("pPhone", customer.Phone));
+        //        if (!string.IsNullOrEmpty(customer.Fax))
+        //        parameters.Add(new MySqlParameter("pFax", customer.Fax));
+        //        ds = MySqlHelper.ExecuteDataset(constr, "UspGetCustomers", parameters.ToArray());
+        //        return ds.Tables[0];
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
         public int SaveUpdateCustomer(Customer customer)
         {
             try
