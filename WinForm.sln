@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormDAL", "PatienceDAL\W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormEntity", "PatienceEntity\WinFormEntity.csproj", "{050D5C2D-8060-42AC-830F-6C9355C05D66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormUI.UnitTests", "WinFormUI.UnitTests\WinFormUI.UnitTests.csproj", "{1796D7C2-C2D5-45CA-95AC-B3876AAEFF49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{050D5C2D-8060-42AC-830F-6C9355C05D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{050D5C2D-8060-42AC-830F-6C9355C05D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{050D5C2D-8060-42AC-830F-6C9355C05D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1796D7C2-C2D5-45CA-95AC-B3876AAEFF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1796D7C2-C2D5-45CA-95AC-B3876AAEFF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1796D7C2-C2D5-45CA-95AC-B3876AAEFF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1796D7C2-C2D5-45CA-95AC-B3876AAEFF49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
