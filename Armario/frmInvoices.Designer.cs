@@ -31,14 +31,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupControlInvoices = new DevExpress.XtraEditors.GroupControl();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
-            this.ShipName1 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.ShipAddress1 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.CustomerName1 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.ProductName1 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.UnitPrice1 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.Quantity1 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.ExtendedPrice1 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.Salesperson1 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.OrderDate1 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.ShippedDate1 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.ShipperName1 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.Freight1 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlInvoices)).BeginInit();
             this.groupControlInvoices.SuspendLayout();
@@ -68,30 +70,20 @@
             // 
             this.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pivotGridControl1.Fields.AddRange(new DevExpress.XtraPivotGrid.PivotGridField[] {
-            this.ShipName1,
-            this.ShipAddress1,
             this.CustomerName1,
             this.ProductName1,
             this.UnitPrice1,
             this.Quantity1,
             this.ExtendedPrice1,
-            this.Salesperson1});
+            this.Salesperson1,
+            this.OrderDate1,
+            this.ShippedDate1,
+            this.ShipperName1,
+            this.Freight1});
             this.pivotGridControl1.Location = new System.Drawing.Point(2, 20);
             this.pivotGridControl1.Name = "pivotGridControl1";
             this.pivotGridControl1.Size = new System.Drawing.Size(1430, 531);
             this.pivotGridControl1.TabIndex = 0;
-            // 
-            // ShipName1
-            // 
-            this.ShipName1.AreaIndex = 0;
-            this.ShipName1.FieldName = "ShipName";
-            this.ShipName1.Name = "ShipName1";
-            // 
-            // ShipAddress1
-            // 
-            this.ShipAddress1.AreaIndex = 1;
-            this.ShipAddress1.FieldName = "ShipAddress";
-            this.ShipAddress1.Name = "ShipAddress1";
             // 
             // CustomerName1
             // 
@@ -127,6 +119,7 @@
             this.ExtendedPrice1.AreaIndex = 4;
             this.ExtendedPrice1.FieldName = "ExtendedPrice";
             this.ExtendedPrice1.Name = "ExtendedPrice1";
+            this.ExtendedPrice1.RunningTotal = true;
             // 
             // Salesperson1
             // 
@@ -134,6 +127,34 @@
             this.Salesperson1.AreaIndex = 5;
             this.Salesperson1.FieldName = "Salesperson";
             this.Salesperson1.Name = "Salesperson1";
+            // 
+            // OrderDate1
+            // 
+            this.OrderDate1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.OrderDate1.AreaIndex = 6;
+            this.OrderDate1.FieldName = "OrderDate";
+            this.OrderDate1.Name = "OrderDate1";
+            // 
+            // ShippedDate1
+            // 
+            this.ShippedDate1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.ShippedDate1.AreaIndex = 7;
+            this.ShippedDate1.FieldName = "ShippedDate";
+            this.ShippedDate1.Name = "ShippedDate1";
+            // 
+            // ShipperName1
+            // 
+            this.ShipperName1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.ShipperName1.AreaIndex = 8;
+            this.ShipperName1.FieldName = "ShipperName";
+            this.ShipperName1.Name = "ShipperName1";
+            // 
+            // Freight1
+            // 
+            this.Freight1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.Freight1.AreaIndex = 9;
+            this.Freight1.FieldName = "Freight";
+            this.Freight1.Name = "Freight1";
             // 
             // frmInvoices
             // 
@@ -159,13 +180,15 @@
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.GroupControl groupControlInvoices;
         private DevExpress.XtraPivotGrid.PivotGridControl pivotGridControl1;
-        private DevExpress.XtraPivotGrid.PivotGridField ShipName1;
-        private DevExpress.XtraPivotGrid.PivotGridField ShipAddress1;
         private DevExpress.XtraPivotGrid.PivotGridField CustomerName1;
         private DevExpress.XtraPivotGrid.PivotGridField ProductName1;
         private DevExpress.XtraPivotGrid.PivotGridField UnitPrice1;
         private DevExpress.XtraPivotGrid.PivotGridField Quantity1;
         private DevExpress.XtraPivotGrid.PivotGridField ExtendedPrice1;
         private DevExpress.XtraPivotGrid.PivotGridField Salesperson1;
+        private DevExpress.XtraPivotGrid.PivotGridField OrderDate1;
+        private DevExpress.XtraPivotGrid.PivotGridField ShippedDate1;
+        private DevExpress.XtraPivotGrid.PivotGridField ShipperName1;
+        private DevExpress.XtraPivotGrid.PivotGridField Freight1;
     }
 }
