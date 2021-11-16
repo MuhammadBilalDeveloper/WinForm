@@ -54,9 +54,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Armario\WinFormUI.csproj">
+      <Project>{23da7d22-877e-4799-8ccb-fa9943a149fe}</Project>
+      <Name>WinFormUI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PatienceDAL\WinFormDAL.csproj">
       <Project>{19917B08-A030-4AE3-8B0D-03F64CC1099D}</Project>
       <Name>WinFormDAL</Name>

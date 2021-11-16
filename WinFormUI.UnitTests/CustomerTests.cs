@@ -14,7 +14,7 @@ namespace WinFormUI.UnitTests
         public void GetCustomer_Any_ReturnsCustomerList()
         {
             // Arrange
-            ICustomerRepositry _customerRepositry = new CustomerRepositry();
+             ICustomerRepositry _customerRepositry = new CustomerRepositry();
             Customer customerobj = new Customer();
             DataTable dataTable = new DataTable();
             // Act
