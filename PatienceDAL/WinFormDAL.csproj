@@ -45,10 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerRepositry.cs" />
+    <Compile Include="SQLServerCustomerRepositry.cs" />
     <Compile Include="ICustomerRepositry.cs" />
     <Compile Include="IInvoiceRepositry.cs" />
     <Compile Include="InvoiceRepositry.cs" />
+    <Compile Include="MySQLServerCustomerRepositry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlHelper.cs" />
   </ItemGroup>

@@ -16,6 +16,7 @@ namespace WinForm
     {
         // Appling Dependency Injection/Inversion
         private readonly IInvoiceRepositry _invoiceRepositry;
+        public string CustomerID;
         public frmInvoices(IInvoiceRepositry InvoiceRepositry)
         {
             InitializeComponent();
@@ -37,7 +38,11 @@ namespace WinForm
         {
             try
             {
-                DataTable dtInvoice = _invoiceRepositry.GetInvoice();
+                DataTable dtInvoice;
+                if (!string.IsNullOrEmpty(CustomerID))
+                    dtInvoice = _invoiceRepositry.GetInvoice(CustomerID);
+                else
+                     dtInvoice = _invoiceRepositry.GetInvoice();
                 pivotGridControl1.DataSource = dtInvoice;
 
             }

@@ -9,6 +9,6 @@ namespace WinFormDAL
 {
     public interface IInvoiceRepositry
     {
-        DataTable GetInvoice();
+        DataTable GetInvoice(string CustomerID="");
     }
 }

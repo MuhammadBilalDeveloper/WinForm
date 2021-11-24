@@ -29,7 +29,7 @@ namespace WinForm
             get
             {
                 if (instance == null || instance.IsDisposed)
-                    instance = new frmAddCustomer(new CustomerRepositry());
+                    instance = new frmAddCustomer(new MySQLServerCustomerRepositry());
                 return instance;
             }
         }

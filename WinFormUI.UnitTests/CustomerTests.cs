@@ -14,7 +14,7 @@ namespace WinFormUI.UnitTests
         public void GetCustomer_Any_ReturnsCustomerList()
         {
             // Arrange
-             ICustomerRepositry _customerRepositry = new CustomerRepositry();
+             ICustomerRepositry _customerRepositry = new MySQLServerCustomerRepositry();
             Customer customerobj = new Customer();
             DataTable dataTable = new DataTable();
             // Act
@@ -27,7 +27,7 @@ namespace WinFormUI.UnitTests
         public void SaveCustomer_Any_ReturnsNumberofRows()
         {
             // Arrange
-            ICustomerRepositry _customerRepositry = new CustomerRepositry();
+            ICustomerRepositry _customerRepositry = new MySQLServerCustomerRepositry();
             Customer customerobj = new Customer() 
             {
                 CustomerID = "Test",
@@ -54,7 +54,7 @@ namespace WinFormUI.UnitTests
         public void UpdateCustomer_Any_ReturnsNumberofRows()
         {
             // Arrange
-            ICustomerRepositry _customerRepositry = new CustomerRepositry();
+            ICustomerRepositry _customerRepositry = new MySQLServerCustomerRepositry();
             Customer customerobj = new Customer()
             {
                 CustomerID = "Test",
@@ -81,7 +81,7 @@ namespace WinFormUI.UnitTests
         public void DeleteCustomer_Any_ReturnsNumberofRows()
         {
             // Arrange
-            ICustomerRepositry _customerRepositry = new CustomerRepositry();
+            ICustomerRepositry _customerRepositry = new MySQLServerCustomerRepositry();
             Customer customerobj = new Customer()
             {
                 CustomerID = "Test",

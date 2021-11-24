@@ -29,7 +29,12 @@ namespace WinForm
             get
             {
                 if (instance == null || instance.IsDisposed)
-                    instance = new frmCustomer(new CustomerRepositry());
+                {
+                    if (Utility.DatabaseSelected == "SQLServer")
+                        instance = new frmCustomer(new SQLServerCustomerRepositry());
+                    if (Utility.DatabaseSelected == "MYSQL")
+                        instance = new frmCustomer(new MySQLServerCustomerRepositry());
+                }
                 return instance;
             }
         }
@@ -147,6 +152,14 @@ namespace WinForm
             }
         }
 
+        private void gridCustomers_DoubleClick(object sender, EventArgs e)
+        {
+            DataRow selectedRow = this.gridView1.GetDataRow(this.gridView1.FocusedRowHandle);
+            var CustomerID = selectedRow["CustomerID"].ToString();
+            var objfrmAddCustomer = frmInvoices.Getinstance;
+            objfrmAddCustomer.CustomerID = CustomerID;
+            DialogResult dr = objfrmAddCustomer.ShowDialog(this);
 
+        }
     }
 }

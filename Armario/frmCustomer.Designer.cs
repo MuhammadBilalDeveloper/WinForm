@@ -394,6 +394,7 @@
             this.gridCustomers.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1,
             this.gridView3});
+            this.gridCustomers.DoubleClick += new System.EventHandler(this.gridCustomers_DoubleClick);
             // 
             // gridView1
             // 

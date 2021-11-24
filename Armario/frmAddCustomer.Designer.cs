@@ -43,8 +43,6 @@ namespace WinForm
             this.txtPostalCode = new DevExpress.XtraEditors.TextEdit();
             this.txtFax = new DevExpress.XtraEditors.TextEdit();
             this.txtPhone = new DevExpress.XtraEditors.TextEdit();
-            this.btnSaveCustomer = new DevExpress.XtraEditors.SimpleButton();
-            this.btnReset = new DevExpress.XtraEditors.SimpleButton();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.LayoutCompanyName = new DevExpress.XtraLayout.LayoutControlItem();
             this.LayoutContactName = new DevExpress.XtraLayout.LayoutControlItem();
@@ -56,11 +54,13 @@ namespace WinForm
             this.LayoutFax = new DevExpress.XtraLayout.LayoutControlItem();
             this.LayoutPhone = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.LayoutAddress = new DevExpress.XtraLayout.LayoutControlItem();
+            this.btnSaveCustomer = new DevExpress.XtraEditors.SimpleButton();
+            this.btnReset = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
@@ -87,11 +87,11 @@ namespace WinForm
             ((System.ComponentModel.ISupportInitialize)(this.LayoutFax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutPhone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutAddress)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -231,30 +231,6 @@ namespace WinForm
             this.txtPhone.StyleController = this.layoutControl1;
             this.txtPhone.TabIndex = 4;
             // 
-            // btnSaveCustomer
-            // 
-            this.btnSaveCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveCustomer.ImageOptions.Image")));
-            this.btnSaveCustomer.Location = new System.Drawing.Point(530, 166);
-            this.btnSaveCustomer.Name = "btnSaveCustomer";
-            this.btnSaveCustomer.Size = new System.Drawing.Size(69, 22);
-            this.btnSaveCustomer.StyleController = this.layoutControl1;
-            this.btnSaveCustomer.TabIndex = 5;
-            this.btnSaveCustomer.Text = "Save";
-            this.btnSaveCustomer.ToolTip = "Save";
-            this.btnSaveCustomer.Click += new System.EventHandler(this.btnSaveCustomer_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageOptions.Image")));
-            this.btnReset.Location = new System.Drawing.Point(603, 166);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(69, 22);
-            this.btnReset.StyleController = this.layoutControl1;
-            this.btnReset.TabIndex = 6;
-            this.btnReset.Text = "Reset";
-            this.btnReset.ToolTip = "Reset";
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -382,26 +358,6 @@ namespace WinForm
             this.emptySpaceItem2.Size = new System.Drawing.Size(664, 34);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.btnSaveCustomer;
-            this.layoutControlItem2.CustomizationFormText = "layoutControlItem2";
-            this.layoutControlItem2.Location = new System.Drawing.Point(518, 154);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(73, 26);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.btnReset;
-            this.layoutControlItem3.CustomizationFormText = "layoutControlItem3";
-            this.layoutControlItem3.Location = new System.Drawing.Point(591, 154);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(73, 26);
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
-            // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
@@ -429,6 +385,50 @@ namespace WinForm
             this.LayoutAddress.Size = new System.Drawing.Size(329, 24);
             this.LayoutAddress.Text = "Address :";
             this.LayoutAddress.TextSize = new System.Drawing.Size(95, 13);
+            // 
+            // btnSaveCustomer
+            // 
+            this.btnSaveCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveCustomer.ImageOptions.Image")));
+            this.btnSaveCustomer.Location = new System.Drawing.Point(530, 166);
+            this.btnSaveCustomer.Name = "btnSaveCustomer";
+            this.btnSaveCustomer.Size = new System.Drawing.Size(69, 22);
+            this.btnSaveCustomer.StyleController = this.layoutControl1;
+            this.btnSaveCustomer.TabIndex = 5;
+            this.btnSaveCustomer.Text = "Save";
+            this.btnSaveCustomer.ToolTip = "Save";
+            this.btnSaveCustomer.Click += new System.EventHandler(this.btnSaveCustomer_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageOptions.Image")));
+            this.btnReset.Location = new System.Drawing.Point(603, 166);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(69, 22);
+            this.btnReset.StyleController = this.layoutControl1;
+            this.btnReset.TabIndex = 6;
+            this.btnReset.Text = "Reset";
+            this.btnReset.ToolTip = "Reset";
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.btnSaveCustomer;
+            this.layoutControlItem2.CustomizationFormText = "layoutControlItem2";
+            this.layoutControlItem2.Location = new System.Drawing.Point(518, 154);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(73, 26);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.btnReset;
+            this.layoutControlItem3.CustomizationFormText = "layoutControlItem3";
+            this.layoutControlItem3.Location = new System.Drawing.Point(591, 154);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(73, 26);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
             // 
             // btnSave
             // 
@@ -488,11 +488,11 @@ namespace WinForm
             ((System.ComponentModel.ISupportInitialize)(this.LayoutFax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutPhone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutAddress)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             this.ResumeLayout(false);
 
         }
