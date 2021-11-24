@@ -442,6 +442,7 @@ namespace WinForm
             this.simpleButton3.StyleController = this.layoutControl1;
             this.simpleButton3.TabIndex = 9;
             this.simpleButton3.Text = "Sign In";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // emptySpaceItem8
             // 

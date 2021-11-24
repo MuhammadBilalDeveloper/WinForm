@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -37,6 +36,12 @@
             this.barLinkContainerItemCustomer = new DevExpress.XtraBars.BarLinkContainerItem();
             this.ribbonPageInvocies = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barLinkContainerItemInvocies = new DevExpress.XtraBars.BarLinkContainerItem();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barLinkContainerItemSystems = new DevExpress.XtraBars.BarLinkContainerItem();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barLinkContainerItemHeatMap = new DevExpress.XtraBars.BarLinkContainerItem();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barLinkContainerItemSettings = new DevExpress.XtraBars.BarLinkContainerItem();
             this.barLinkContainerItemAddCustomer = new DevExpress.XtraBars.BarLinkContainerItem();
             this.barLinkContainerItem4 = new DevExpress.XtraBars.BarLinkContainerItem();
             this.barLinkContainerItem6 = new DevExpress.XtraBars.BarLinkContainerItem();
@@ -65,16 +70,10 @@
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barLinkContainerItem5 = new DevExpress.XtraBars.BarLinkContainerItem();
-            this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
-            this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
-            this.styleController1 = new DevExpress.XtraEditors.StyleController(this.components);
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barLinkContainerItemSystems = new DevExpress.XtraBars.BarLinkContainerItem();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barLinkContainerItemHeatMap = new DevExpress.XtraBars.BarLinkContainerItem();
-            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barLinkContainerItemSettings = new DevExpress.XtraBars.BarLinkContainerItem();
+            this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager();
+            this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView();
+            this.styleController1 = new DevExpress.XtraEditors.StyleController();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).BeginInit();
@@ -135,6 +134,48 @@
             this.barLinkContainerItemInvocies.LargeWidth = 100;
             this.barLinkContainerItemInvocies.Name = "barLinkContainerItemInvocies";
             this.barLinkContainerItemInvocies.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barLinkContainerItemInvocies_ItemClick);
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.barLinkContainerItemSystems);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            // 
+            // barLinkContainerItemSystems
+            // 
+            this.barLinkContainerItemSystems.Caption = "Systems";
+            this.barLinkContainerItemSystems.Id = 31;
+            this.barLinkContainerItemSystems.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItemSystems.ImageOptions.Image")));
+            this.barLinkContainerItemSystems.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItemSystems.ImageOptions.LargeImage")));
+            this.barLinkContainerItemSystems.LargeWidth = 100;
+            this.barLinkContainerItemSystems.Name = "barLinkContainerItemSystems";
+            // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.barLinkContainerItemHeatMap);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            // 
+            // barLinkContainerItemHeatMap
+            // 
+            this.barLinkContainerItemHeatMap.Caption = "Heat Map";
+            this.barLinkContainerItemHeatMap.Id = 32;
+            this.barLinkContainerItemHeatMap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItemHeatMap.ImageOptions.Image")));
+            this.barLinkContainerItemHeatMap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItemHeatMap.ImageOptions.LargeImage")));
+            this.barLinkContainerItemHeatMap.LargeWidth = 100;
+            this.barLinkContainerItemHeatMap.Name = "barLinkContainerItemHeatMap";
+            // 
+            // ribbonPageGroup7
+            // 
+            this.ribbonPageGroup7.ItemLinks.Add(this.barLinkContainerItemSettings);
+            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            // 
+            // barLinkContainerItemSettings
+            // 
+            this.barLinkContainerItemSettings.Caption = "Settings";
+            this.barLinkContainerItemSettings.Id = 33;
+            this.barLinkContainerItemSettings.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItemSettings.ImageOptions.Image")));
+            this.barLinkContainerItemSettings.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItemSettings.ImageOptions.LargeImage")));
+            this.barLinkContainerItemSettings.LargeWidth = 100;
+            this.barLinkContainerItemSettings.Name = "barLinkContainerItemSettings";
             // 
             // barLinkContainerItemAddCustomer
             // 
@@ -366,48 +407,6 @@
             this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
             this.tabbedView1});
             // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barLinkContainerItemSystems);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            // 
-            // barLinkContainerItemSystems
-            // 
-            this.barLinkContainerItemSystems.Caption = "Systems";
-            this.barLinkContainerItemSystems.Id = 31;
-            this.barLinkContainerItemSystems.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItem2.ImageOptions.Image")));
-            this.barLinkContainerItemSystems.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItem2.ImageOptions.LargeImage")));
-            this.barLinkContainerItemSystems.LargeWidth = 100;
-            this.barLinkContainerItemSystems.Name = "barLinkContainerItemSystems";
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.barLinkContainerItemHeatMap);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            // 
-            // barLinkContainerItemHeatMap
-            // 
-            this.barLinkContainerItemHeatMap.Caption = "Heat Map";
-            this.barLinkContainerItemHeatMap.Id = 32;
-            this.barLinkContainerItemHeatMap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItem2.ImageOptions.Image1")));
-            this.barLinkContainerItemHeatMap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItem2.ImageOptions.LargeImage1")));
-            this.barLinkContainerItemHeatMap.LargeWidth = 100;
-            this.barLinkContainerItemHeatMap.Name = "barLinkContainerItemHeatMap";
-            // 
-            // ribbonPageGroup7
-            // 
-            this.ribbonPageGroup7.ItemLinks.Add(this.barLinkContainerItemSettings);
-            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            // 
-            // barLinkContainerItemSettings
-            // 
-            this.barLinkContainerItemSettings.Caption = "Settings";
-            this.barLinkContainerItemSettings.Id = 33;
-            this.barLinkContainerItemSettings.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItem2.ImageOptions.Image2")));
-            this.barLinkContainerItemSettings.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItem2.ImageOptions.LargeImage2")));
-            this.barLinkContainerItemSettings.LargeWidth = 100;
-            this.barLinkContainerItemSettings.Name = "barLinkContainerItemSettings";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -422,6 +421,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
             this.Text = "Coin Tracker";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).EndInit();

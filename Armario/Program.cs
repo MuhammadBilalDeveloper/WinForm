@@ -17,7 +17,7 @@ namespace WinForm
             DevExpress.UserSkins.BonusSkins.Register();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(frmLogin.Getinstance);
+            Application.Run(frmMain.Getinstance);
         }
     }
 }

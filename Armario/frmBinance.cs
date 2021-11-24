@@ -12,31 +12,30 @@ using WinFormDAL;
 
 namespace WinForm
 {
-    public partial class frmLogin : DevExpress.XtraEditors.XtraForm
+    public partial class frmBinance : DevExpress.XtraEditors.XtraForm
     {
-        public frmLogin()
+        public frmBinance()
         {
             InitializeComponent();
         }
         // Applying singelton pattern
-        private static frmLogin instance;
-        public static frmLogin Getinstance
+        private static frmBinance instance;
+        public static frmBinance Getinstance
         {
             get
             {
                 if (instance == null || instance.IsDisposed)
-                    instance = new frmLogin();
+                    instance = new frmBinance();
                 return instance;
             }
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
-            var  form = frmBinance.Getinstance;
-            form.Show();
+            var form = frmMain.Getinstance;
+            form.ShowDialog();
             form.Activate();
             form.Focus();
-           
         }
     }
 }
