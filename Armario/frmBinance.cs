@@ -29,13 +29,5 @@ namespace WinForm
                 return instance;
             }
         }
-
-        private void simpleButton3_Click(object sender, EventArgs e)
-        {
-            var form = frmMain.Getinstance;
-            form.ShowDialog();
-            form.Activate();
-            form.Focus();
-        }
     }
 }
