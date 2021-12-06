@@ -15,6 +15,7 @@ namespace WinForm
         static void Main()
         {
             DevExpress.UserSkins.BonusSkins.Register();
+            DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = "Office 2010 Blue";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             using (var login = frmLogin.Getinstance)
