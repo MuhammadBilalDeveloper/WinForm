@@ -29,5 +29,11 @@ namespace WinForm
                 return instance;
             }
         }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

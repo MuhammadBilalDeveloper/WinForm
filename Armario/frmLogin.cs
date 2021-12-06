@@ -33,9 +33,12 @@ namespace WinForm
         private void simpleButton3_Click(object sender, EventArgs e)
         {
             var  form = frmBinance.Getinstance;
-            form.Show();
-            form.Activate();
-            form.Focus();
+            if (form.ShowDialog(this) == DialogResult.OK)
+            {
+                form.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+
            
         }
     }

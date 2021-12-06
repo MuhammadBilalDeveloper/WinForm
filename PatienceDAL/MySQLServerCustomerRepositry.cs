@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -21,15 +20,15 @@ namespace WinFormDAL
         {
             string constr = ConfigurationManager.ConnectionStrings["ConnectionString_MySQLServer"].ConnectionString;
             string commandText = "SELECT * FROM northwind.customers;";
-
-            using (MySqlConnection connection = new MySqlConnection(constr))
-            {
-                //MySqlCommand cmd = new MySqlCommand(commandText, connection);
-                MySqlDataAdapter returnVal = new MySqlDataAdapter(commandText, connection);
-                DataTable dt = new DataTable("CharacterInfo");
-                returnVal.Fill(dt);
-                return dt;
-            }
+            return new DataTable();
+            //using (MySqlConnection connection = new MySqlConnection(constr))
+            //{
+            //    //MySqlCommand cmd = new MySqlCommand(commandText, connection);
+            //    MySqlDataAdapter returnVal = new MySqlDataAdapter(commandText, connection);
+            //    DataTable dt = new DataTable("CharacterInfo");
+            //    returnVal.Fill(dt);
+            //    return dt;
+            //}
         }
 
         public int SaveUpdateCustomer(Customer customer)

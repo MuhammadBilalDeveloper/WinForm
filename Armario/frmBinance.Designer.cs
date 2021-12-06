@@ -123,6 +123,7 @@ namespace WinForm
             this.simpleButton3.StyleController = this.layoutControl1;
             this.simpleButton3.TabIndex = 9;
             this.simpleButton3.Text = "OK";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // Root
             // 
