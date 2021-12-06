@@ -35,7 +35,7 @@ namespace WinForm
             var  form = frmBinance.Getinstance;
             if (form.ShowDialog(this) == DialogResult.OK)
             {
-                form.DialogResult = DialogResult.OK;
+                this.DialogResult = DialogResult.OK;
                 this.Close();
             }
 
