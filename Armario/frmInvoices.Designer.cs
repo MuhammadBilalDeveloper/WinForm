@@ -53,7 +53,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1434, 553);
+            this.panel1.Size = new System.Drawing.Size(1428, 547);
             this.panel1.TabIndex = 0;
             // 
             // groupControlInvoices
@@ -62,7 +62,7 @@
             this.groupControlInvoices.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControlInvoices.Location = new System.Drawing.Point(0, 0);
             this.groupControlInvoices.Name = "groupControlInvoices";
-            this.groupControlInvoices.Size = new System.Drawing.Size(1434, 553);
+            this.groupControlInvoices.Size = new System.Drawing.Size(1428, 547);
             this.groupControlInvoices.TabIndex = 0;
             this.groupControlInvoices.Text = "Invoices Detail";
             // 
@@ -80,9 +80,9 @@
             this.ShippedDate1,
             this.ShipperName1,
             this.Freight1});
-            this.pivotGridControl1.Location = new System.Drawing.Point(2, 20);
+            this.pivotGridControl1.Location = new System.Drawing.Point(2, 21);
             this.pivotGridControl1.Name = "pivotGridControl1";
-            this.pivotGridControl1.Size = new System.Drawing.Size(1430, 531);
+            this.pivotGridControl1.Size = new System.Drawing.Size(1424, 524);
             this.pivotGridControl1.TabIndex = 0;
             // 
             // CustomerName1
@@ -158,7 +158,7 @@
             // 
             // frmInvoices
             // 
-            this.ClientSize = new System.Drawing.Size(1434, 553);
+            this.ClientSize = new System.Drawing.Size(1428, 547);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;

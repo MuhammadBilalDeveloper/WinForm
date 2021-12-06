@@ -50,10 +50,10 @@ namespace WinForm
         {
             try
             {
-                var form = Application.OpenForms["frmInvoices"];
+                var form = Application.OpenForms["frmMyPage"];
                 if (form == null)
                 {
-                    form = frmInvoices.Getinstance;
+                    form = frmMyPage.Getinstance;
                     form.MdiParent = this;
                     form.Show();
                 }
