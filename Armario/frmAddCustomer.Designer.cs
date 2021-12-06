@@ -29,8 +29,9 @@ namespace WinForm
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddCustomer));
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.txtCompamyName = new DevExpress.XtraEditors.TextEdit();
             this.txtContactName = new DevExpress.XtraEditors.TextEdit();

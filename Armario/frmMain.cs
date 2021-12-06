@@ -31,10 +31,10 @@ namespace WinForm
         {
             try
             {
-                var form = Application.OpenForms["frmCustomer"];
+                var form = Application.OpenForms["frmMainPage"];
                 if (form == null)
                 {
-                    form = frmCustomer.Getinstance;
+                    form = frmMainPage.Getinstance;
                     form.MdiParent = this;
                     form.Show();
                 }
