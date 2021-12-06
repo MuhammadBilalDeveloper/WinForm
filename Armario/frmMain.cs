@@ -86,9 +86,9 @@ namespace WinForm
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            var login = frmLogin.Getinstance;
-            login.MdiParent = this;
-            login.ShowDialog();
+            //var login = frmLogin.Getinstance;
+            //login.MdiParent = this;
+            //login.ShowDialog();
         }
     }
 }
