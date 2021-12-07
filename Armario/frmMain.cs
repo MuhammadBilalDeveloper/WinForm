@@ -83,12 +83,5 @@ namespace WinForm
                 MessageBox.Show(ex.Message, Utility.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void frmMain_Load(object sender, EventArgs e)
-        {
-            //var login = frmLogin.Getinstance;
-            //login.MdiParent = this;
-            //login.ShowDialog();
-        }
     }
 }
