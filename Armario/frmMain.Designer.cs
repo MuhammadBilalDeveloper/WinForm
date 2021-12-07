@@ -149,6 +149,7 @@
             this.barLinkContainerItemSystems.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItemSystems.ImageOptions.LargeImage")));
             this.barLinkContainerItemSystems.LargeWidth = 100;
             this.barLinkContainerItemSystems.Name = "barLinkContainerItemSystems";
+            this.barLinkContainerItemSystems.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barLinkContainerItemSystems_ItemClick);
             // 
             // ribbonPageGroup4
             // 
