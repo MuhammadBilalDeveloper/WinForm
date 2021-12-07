@@ -66,6 +66,7 @@
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem5 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -111,6 +112,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -385,7 +387,8 @@
             this.layoutControlItem7,
             this.emptySpaceItem4,
             this.layoutControlItem8,
-            this.layoutControlItem9});
+            this.layoutControlItem9,
+            this.emptySpaceItem5});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Size = new System.Drawing.Size(1322, 297);
             this.layoutControlGroup1.Text = "Add New System";
@@ -453,9 +456,9 @@
             // emptySpaceItem4
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 28);
+            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 59);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(1302, 231);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(1302, 200);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // toggleSwitch1
@@ -494,6 +497,14 @@
             this.layoutControlItem9.Size = new System.Drawing.Size(539, 28);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
+            // 
+            // emptySpaceItem5
+            // 
+            this.emptySpaceItem5.AllowHotTrack = false;
+            this.emptySpaceItem5.Location = new System.Drawing.Point(0, 28);
+            this.emptySpaceItem5.Name = "emptySpaceItem5";
+            this.emptySpaceItem5.Size = new System.Drawing.Size(1302, 31);
+            this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmSystems
             // 
@@ -550,6 +561,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -594,5 +606,6 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem5;
     }
 }
