@@ -102,5 +102,24 @@ namespace WinForm
                 MessageBox.Show(ex.Message, Utility.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void barLinkContainerItemHeatMap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                var form = Application.OpenForms["frmHeatMap"];
+                if (form == null)
+                {
+                    form = frmHeatMap.Getinstance;
+                    form.MdiParent = this;
+                    form.Show();
+                }
+                form.Activate();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, Utility.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

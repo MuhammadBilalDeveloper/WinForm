@@ -164,6 +164,7 @@
             this.barLinkContainerItemHeatMap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItemHeatMap.ImageOptions.LargeImage")));
             this.barLinkContainerItemHeatMap.LargeWidth = 100;
             this.barLinkContainerItemHeatMap.Name = "barLinkContainerItemHeatMap";
+            this.barLinkContainerItemHeatMap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barLinkContainerItemHeatMap_ItemClick);
             // 
             // ribbonPageGroup7
             // 
