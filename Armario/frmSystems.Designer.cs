@@ -583,9 +583,9 @@
             // simpleButton14
             // 
             this.simpleButton14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton14.ImageOptions.Image")));
-            this.simpleButton14.Location = new System.Drawing.Point(1238, 205);
+            this.simpleButton14.Location = new System.Drawing.Point(1243, 205);
             this.simpleButton14.Name = "simpleButton14";
-            this.simpleButton14.Size = new System.Drawing.Size(29, 22);
+            this.simpleButton14.Size = new System.Drawing.Size(24, 22);
             this.simpleButton14.StyleController = this.layoutControl3;
             this.simpleButton14.TabIndex = 19;
             // 
@@ -842,9 +842,9 @@
             // layoutControlItem21
             // 
             this.layoutControlItem21.Control = this.simpleButton14;
-            this.layoutControlItem21.Location = new System.Drawing.Point(1226, 175);
+            this.layoutControlItem21.Location = new System.Drawing.Point(1231, 175);
             this.layoutControlItem21.Name = "layoutControlItem21";
-            this.layoutControlItem21.Size = new System.Drawing.Size(33, 26);
+            this.layoutControlItem21.Size = new System.Drawing.Size(28, 26);
             this.layoutControlItem21.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem21.TextVisible = false;
             // 
@@ -862,7 +862,7 @@
             this.emptySpaceItem10.AllowHotTrack = false;
             this.emptySpaceItem10.Location = new System.Drawing.Point(0, 175);
             this.emptySpaceItem10.Name = "emptySpaceItem10";
-            this.emptySpaceItem10.Size = new System.Drawing.Size(1226, 26);
+            this.emptySpaceItem10.Size = new System.Drawing.Size(1231, 26);
             this.emptySpaceItem10.TextSize = new System.Drawing.Size(0, 0);
             // 
             // gridControl2
