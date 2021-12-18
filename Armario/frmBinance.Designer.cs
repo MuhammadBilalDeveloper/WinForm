@@ -69,7 +69,7 @@ namespace WinForm
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(409, 156);
+            this.panel1.Size = new System.Drawing.Size(403, 150);
             this.panel1.TabIndex = 0;
             // 
             // layoutControl1
@@ -83,7 +83,7 @@ namespace WinForm
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(366, 495, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(409, 156);
+            this.layoutControl1.Size = new System.Drawing.Size(403, 150);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -91,7 +91,7 @@ namespace WinForm
             // 
             this.textEdit1.Location = new System.Drawing.Point(71, 45);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(326, 20);
+            this.textEdit1.Size = new System.Drawing.Size(320, 20);
             this.textEdit1.StyleController = this.layoutControl1;
             this.textEdit1.TabIndex = 5;
             // 
@@ -111,15 +111,15 @@ namespace WinForm
             // 
             this.textEdit2.Location = new System.Drawing.Point(71, 69);
             this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(326, 20);
+            this.textEdit2.Size = new System.Drawing.Size(320, 20);
             this.textEdit2.StyleController = this.layoutControl1;
             this.textEdit2.TabIndex = 5;
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(134, 93);
+            this.simpleButton3.Location = new System.Drawing.Point(132, 93);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(119, 22);
+            this.simpleButton3.Size = new System.Drawing.Size(117, 22);
             this.simpleButton3.StyleController = this.layoutControl1;
             this.simpleButton3.TabIndex = 9;
             this.simpleButton3.Text = "OK";
@@ -138,7 +138,7 @@ namespace WinForm
             this.layoutControlItem12,
             this.emptySpaceItem3});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(409, 156);
+            this.Root.Size = new System.Drawing.Size(403, 150);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -146,7 +146,7 @@ namespace WinForm
             this.layoutControlItem1.Control = this.labelControl1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(389, 33);
+            this.layoutControlItem1.Size = new System.Drawing.Size(383, 33);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -155,7 +155,7 @@ namespace WinForm
             this.layoutControlItem2.Control = this.textEdit1;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 33);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(389, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(383, 24);
             this.layoutControlItem2.Text = "Token Key:";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(56, 13);
             // 
@@ -165,7 +165,7 @@ namespace WinForm
             this.layoutControlItem3.CustomizationFormText = "Password:";
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 57);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(389, 24);
+            this.layoutControlItem3.Size = new System.Drawing.Size(383, 24);
             this.layoutControlItem3.Text = "Secret Key:";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(56, 13);
             // 
@@ -175,7 +175,7 @@ namespace WinForm
             this.emptySpaceItem9.CustomizationFormText = "emptySpaceItem4";
             this.emptySpaceItem9.Location = new System.Drawing.Point(0, 81);
             this.emptySpaceItem9.Name = "emptySpaceItem9";
-            this.emptySpaceItem9.Size = new System.Drawing.Size(122, 26);
+            this.emptySpaceItem9.Size = new System.Drawing.Size(120, 26);
             this.emptySpaceItem9.Text = "emptySpaceItem4";
             this.emptySpaceItem9.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -183,9 +183,9 @@ namespace WinForm
             // 
             this.emptySpaceItem8.AllowHotTrack = false;
             this.emptySpaceItem8.CustomizationFormText = "emptySpaceItem3";
-            this.emptySpaceItem8.Location = new System.Drawing.Point(245, 81);
+            this.emptySpaceItem8.Location = new System.Drawing.Point(241, 81);
             this.emptySpaceItem8.Name = "emptySpaceItem8";
-            this.emptySpaceItem8.Size = new System.Drawing.Size(144, 26);
+            this.emptySpaceItem8.Size = new System.Drawing.Size(142, 26);
             this.emptySpaceItem8.Text = "emptySpaceItem3";
             this.emptySpaceItem8.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -193,9 +193,9 @@ namespace WinForm
             // 
             this.layoutControlItem12.Control = this.simpleButton3;
             this.layoutControlItem12.CustomizationFormText = "layoutControlItem7";
-            this.layoutControlItem12.Location = new System.Drawing.Point(122, 81);
+            this.layoutControlItem12.Location = new System.Drawing.Point(120, 81);
             this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.Size = new System.Drawing.Size(123, 26);
+            this.layoutControlItem12.Size = new System.Drawing.Size(121, 26);
             this.layoutControlItem12.Text = "layoutControlItem7";
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem12.TextVisible = false;
@@ -205,7 +205,7 @@ namespace WinForm
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.Location = new System.Drawing.Point(0, 107);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(389, 29);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(383, 23);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem1
@@ -228,7 +228,7 @@ namespace WinForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 156);
+            this.ClientSize = new System.Drawing.Size(403, 150);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

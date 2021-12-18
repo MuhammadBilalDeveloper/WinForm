@@ -113,7 +113,7 @@ namespace WinForm
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(384, 0, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(678, 209);
+            this.layoutControl1.Size = new System.Drawing.Size(672, 203);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -128,18 +128,18 @@ namespace WinForm
             this.txtCompamyName.Properties.MaxLength = 40;
             this.txtCompamyName.Properties.NullValuePrompt = "Company Name";
             this.txtCompamyName.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtCompamyName.Size = new System.Drawing.Size(230, 20);
+            this.txtCompamyName.Size = new System.Drawing.Size(227, 20);
             this.txtCompamyName.StyleController = this.layoutControl1;
             this.txtCompamyName.TabIndex = 4;
             // 
             // txtContactName
             // 
-            this.txtContactName.Location = new System.Drawing.Point(442, 12);
+            this.txtContactName.Location = new System.Drawing.Point(439, 12);
             this.txtContactName.Name = "txtContactName";
             this.txtContactName.Properties.MaxLength = 30;
             this.txtContactName.Properties.NullValuePrompt = "Contact Name";
             this.txtContactName.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtContactName.Size = new System.Drawing.Size(224, 20);
+            this.txtContactName.Size = new System.Drawing.Size(221, 20);
             this.txtContactName.StyleController = this.layoutControl1;
             this.txtContactName.TabIndex = 4;
             // 
@@ -150,29 +150,29 @@ namespace WinForm
             this.txtContactTitle.Properties.MaxLength = 30;
             this.txtContactTitle.Properties.NullValuePrompt = "Contact Title";
             this.txtContactTitle.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtContactTitle.Size = new System.Drawing.Size(230, 20);
+            this.txtContactTitle.Size = new System.Drawing.Size(227, 20);
             this.txtContactTitle.StyleController = this.layoutControl1;
             this.txtContactTitle.TabIndex = 4;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(442, 36);
+            this.txtAddress.Location = new System.Drawing.Point(439, 36);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Properties.MaxLength = 60;
             this.txtAddress.Properties.NullValuePrompt = "Address";
             this.txtAddress.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtAddress.Size = new System.Drawing.Size(224, 20);
+            this.txtAddress.Size = new System.Drawing.Size(221, 20);
             this.txtAddress.StyleController = this.layoutControl1;
             this.txtAddress.TabIndex = 4;
             // 
             // txtRegion
             // 
-            this.txtRegion.Location = new System.Drawing.Point(442, 60);
+            this.txtRegion.Location = new System.Drawing.Point(439, 60);
             this.txtRegion.Name = "txtRegion";
             this.txtRegion.Properties.MaxLength = 15;
             this.txtRegion.Properties.NullValuePrompt = "Region";
             this.txtRegion.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtRegion.Size = new System.Drawing.Size(224, 20);
+            this.txtRegion.Size = new System.Drawing.Size(221, 20);
             this.txtRegion.StyleController = this.layoutControl1;
             this.txtRegion.TabIndex = 4;
             // 
@@ -183,18 +183,18 @@ namespace WinForm
             this.txtCity.Properties.MaxLength = 15;
             this.txtCity.Properties.NullValuePrompt = "City";
             this.txtCity.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtCity.Size = new System.Drawing.Size(230, 20);
+            this.txtCity.Size = new System.Drawing.Size(227, 20);
             this.txtCity.StyleController = this.layoutControl1;
             this.txtCity.TabIndex = 4;
             // 
             // txtCountry
             // 
-            this.txtCountry.Location = new System.Drawing.Point(442, 84);
+            this.txtCountry.Location = new System.Drawing.Point(439, 84);
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Properties.MaxLength = 15;
             this.txtCountry.Properties.NullValuePrompt = "Country";
             this.txtCountry.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtCountry.Size = new System.Drawing.Size(224, 20);
+            this.txtCountry.Size = new System.Drawing.Size(221, 20);
             this.txtCountry.StyleController = this.layoutControl1;
             this.txtCountry.TabIndex = 4;
             // 
@@ -205,18 +205,18 @@ namespace WinForm
             this.txtPostalCode.Properties.MaxLength = 10;
             this.txtPostalCode.Properties.NullValuePrompt = "Postal Code";
             this.txtPostalCode.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtPostalCode.Size = new System.Drawing.Size(230, 20);
+            this.txtPostalCode.Size = new System.Drawing.Size(227, 20);
             this.txtPostalCode.StyleController = this.layoutControl1;
             this.txtPostalCode.TabIndex = 4;
             // 
             // txtFax
             // 
-            this.txtFax.Location = new System.Drawing.Point(442, 108);
+            this.txtFax.Location = new System.Drawing.Point(439, 108);
             this.txtFax.Name = "txtFax";
             this.txtFax.Properties.MaxLength = 24;
             this.txtFax.Properties.NullValuePrompt = "Fax";
             this.txtFax.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtFax.Size = new System.Drawing.Size(224, 20);
+            this.txtFax.Size = new System.Drawing.Size(221, 20);
             this.txtFax.StyleController = this.layoutControl1;
             this.txtFax.TabIndex = 4;
             // 
@@ -227,7 +227,7 @@ namespace WinForm
             this.txtPhone.Properties.MaxLength = 24;
             this.txtPhone.Properties.NullValuePrompt = "Phone";
             this.txtPhone.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtPhone.Size = new System.Drawing.Size(230, 20);
+            this.txtPhone.Size = new System.Drawing.Size(227, 20);
             this.txtPhone.StyleController = this.layoutControl1;
             this.txtPhone.TabIndex = 4;
             // 
@@ -252,7 +252,7 @@ namespace WinForm
             this.emptySpaceItem3,
             this.LayoutAddress});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(678, 209);
+            this.Root.Size = new System.Drawing.Size(672, 203);
             this.Root.TextVisible = false;
             // 
             // LayoutCompanyName
@@ -263,7 +263,7 @@ namespace WinForm
             this.LayoutCompanyName.Location = new System.Drawing.Point(0, 0);
             this.LayoutCompanyName.Name = "LayoutCompanyName";
             this.LayoutCompanyName.OptionsToolTip.ToolTip = "Company Name :";
-            this.LayoutCompanyName.Size = new System.Drawing.Size(332, 24);
+            this.LayoutCompanyName.Size = new System.Drawing.Size(329, 24);
             this.LayoutCompanyName.Text = "Company Name : <color=red>*</color>";
             this.LayoutCompanyName.TextSize = new System.Drawing.Size(95, 13);
             // 
@@ -272,9 +272,9 @@ namespace WinForm
             this.LayoutContactName.AllowHtmlStringInCaption = true;
             this.LayoutContactName.Control = this.txtContactName;
             this.LayoutContactName.CustomizationFormText = "txtContactName";
-            this.LayoutContactName.Location = new System.Drawing.Point(332, 0);
+            this.LayoutContactName.Location = new System.Drawing.Point(329, 0);
             this.LayoutContactName.Name = "LayoutContactName";
-            this.LayoutContactName.Size = new System.Drawing.Size(326, 24);
+            this.LayoutContactName.Size = new System.Drawing.Size(323, 24);
             this.LayoutContactName.Text = "Contact Name : <color=red>*</color>";
             this.LayoutContactName.TextSize = new System.Drawing.Size(95, 13);
             // 
@@ -284,7 +284,7 @@ namespace WinForm
             this.LayoutContactTitle.CustomizationFormText = "txtContactName";
             this.LayoutContactTitle.Location = new System.Drawing.Point(0, 24);
             this.LayoutContactTitle.Name = "LayoutContactTitle";
-            this.LayoutContactTitle.Size = new System.Drawing.Size(332, 24);
+            this.LayoutContactTitle.Size = new System.Drawing.Size(329, 24);
             this.LayoutContactTitle.Text = "Contact Title :         ";
             this.LayoutContactTitle.TextSize = new System.Drawing.Size(95, 13);
             // 
@@ -292,9 +292,9 @@ namespace WinForm
             // 
             this.LayoutRegion.Control = this.txtRegion;
             this.LayoutRegion.CustomizationFormText = "txtRegion";
-            this.LayoutRegion.Location = new System.Drawing.Point(332, 48);
+            this.LayoutRegion.Location = new System.Drawing.Point(329, 48);
             this.LayoutRegion.Name = "LayoutRegion";
-            this.LayoutRegion.Size = new System.Drawing.Size(326, 24);
+            this.LayoutRegion.Size = new System.Drawing.Size(323, 24);
             this.LayoutRegion.Text = "Region :";
             this.LayoutRegion.TextSize = new System.Drawing.Size(95, 13);
             // 
@@ -304,7 +304,7 @@ namespace WinForm
             this.LayoutCity.CustomizationFormText = "txtCity";
             this.LayoutCity.Location = new System.Drawing.Point(0, 48);
             this.LayoutCity.Name = "LayoutCity";
-            this.LayoutCity.Size = new System.Drawing.Size(332, 24);
+            this.LayoutCity.Size = new System.Drawing.Size(329, 24);
             this.LayoutCity.Text = "City :";
             this.LayoutCity.TextSize = new System.Drawing.Size(95, 13);
             // 
@@ -313,9 +313,9 @@ namespace WinForm
             this.LayoutCountry.AllowHide = false;
             this.LayoutCountry.Control = this.txtCountry;
             this.LayoutCountry.CustomizationFormText = "txtCountry";
-            this.LayoutCountry.Location = new System.Drawing.Point(332, 72);
+            this.LayoutCountry.Location = new System.Drawing.Point(329, 72);
             this.LayoutCountry.Name = "LayoutCountry";
-            this.LayoutCountry.Size = new System.Drawing.Size(326, 24);
+            this.LayoutCountry.Size = new System.Drawing.Size(323, 24);
             this.LayoutCountry.Text = "Country :";
             this.LayoutCountry.TextSize = new System.Drawing.Size(95, 13);
             // 
@@ -325,7 +325,7 @@ namespace WinForm
             this.LayoutPostalCode.CustomizationFormText = "txtPostalCode";
             this.LayoutPostalCode.Location = new System.Drawing.Point(0, 72);
             this.LayoutPostalCode.Name = "LayoutPostalCode";
-            this.LayoutPostalCode.Size = new System.Drawing.Size(332, 24);
+            this.LayoutPostalCode.Size = new System.Drawing.Size(329, 24);
             this.LayoutPostalCode.Text = "Postal Code :";
             this.LayoutPostalCode.TextSize = new System.Drawing.Size(95, 13);
             // 
@@ -333,9 +333,9 @@ namespace WinForm
             // 
             this.LayoutFax.Control = this.txtFax;
             this.LayoutFax.CustomizationFormText = "txtFax";
-            this.LayoutFax.Location = new System.Drawing.Point(332, 96);
+            this.LayoutFax.Location = new System.Drawing.Point(329, 96);
             this.LayoutFax.Name = "LayoutFax";
-            this.LayoutFax.Size = new System.Drawing.Size(326, 24);
+            this.LayoutFax.Size = new System.Drawing.Size(323, 24);
             this.LayoutFax.Text = "Fax :";
             this.LayoutFax.TextSize = new System.Drawing.Size(95, 13);
             // 
@@ -345,7 +345,7 @@ namespace WinForm
             this.LayoutPhone.CustomizationFormText = "txtPhone";
             this.LayoutPhone.Location = new System.Drawing.Point(0, 96);
             this.LayoutPhone.Name = "LayoutPhone";
-            this.LayoutPhone.Size = new System.Drawing.Size(332, 24);
+            this.LayoutPhone.Size = new System.Drawing.Size(329, 24);
             this.LayoutPhone.Text = "Phone :";
             this.LayoutPhone.TextSize = new System.Drawing.Size(95, 13);
             // 
@@ -355,24 +355,24 @@ namespace WinForm
             this.emptySpaceItem2.CustomizationFormText = "emptySpaceItem2";
             this.emptySpaceItem2.Location = new System.Drawing.Point(0, 120);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(658, 28);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(652, 22);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 174);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 168);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(658, 15);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(652, 15);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.CustomizationFormText = "emptySpaceItem1";
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 148);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 142);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(513, 26);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(508, 26);
             this.emptySpaceItem3.Text = "emptySpaceItem1";
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -380,18 +380,18 @@ namespace WinForm
             // 
             this.LayoutAddress.Control = this.txtAddress;
             this.LayoutAddress.CustomizationFormText = "txtAddress";
-            this.LayoutAddress.Location = new System.Drawing.Point(332, 24);
+            this.LayoutAddress.Location = new System.Drawing.Point(329, 24);
             this.LayoutAddress.Name = "LayoutAddress";
-            this.LayoutAddress.Size = new System.Drawing.Size(326, 24);
+            this.LayoutAddress.Size = new System.Drawing.Size(323, 24);
             this.LayoutAddress.Text = "Address :";
             this.LayoutAddress.TextSize = new System.Drawing.Size(95, 13);
             // 
             // btnSaveCustomer
             // 
             this.btnSaveCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveCustomer.ImageOptions.Image")));
-            this.btnSaveCustomer.Location = new System.Drawing.Point(525, 160);
+            this.btnSaveCustomer.Location = new System.Drawing.Point(520, 154);
             this.btnSaveCustomer.Name = "btnSaveCustomer";
-            this.btnSaveCustomer.Size = new System.Drawing.Size(68, 22);
+            this.btnSaveCustomer.Size = new System.Drawing.Size(67, 22);
             this.btnSaveCustomer.StyleController = this.layoutControl1;
             this.btnSaveCustomer.TabIndex = 5;
             this.btnSaveCustomer.Text = "Save";
@@ -401,7 +401,7 @@ namespace WinForm
             // btnReset
             // 
             this.btnReset.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageOptions.Image")));
-            this.btnReset.Location = new System.Drawing.Point(597, 160);
+            this.btnReset.Location = new System.Drawing.Point(591, 154);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(69, 22);
             this.btnReset.StyleController = this.layoutControl1;
@@ -414,9 +414,9 @@ namespace WinForm
             // 
             this.layoutControlItem2.Control = this.btnSaveCustomer;
             this.layoutControlItem2.CustomizationFormText = "layoutControlItem2";
-            this.layoutControlItem2.Location = new System.Drawing.Point(513, 148);
+            this.layoutControlItem2.Location = new System.Drawing.Point(508, 142);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(72, 26);
+            this.layoutControlItem2.Size = new System.Drawing.Size(71, 26);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -424,7 +424,7 @@ namespace WinForm
             // 
             this.layoutControlItem3.Control = this.btnReset;
             this.layoutControlItem3.CustomizationFormText = "layoutControlItem3";
-            this.layoutControlItem3.Location = new System.Drawing.Point(585, 148);
+            this.layoutControlItem3.Location = new System.Drawing.Point(579, 142);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(73, 26);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
@@ -454,7 +454,7 @@ namespace WinForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 209);
+            this.ClientSize = new System.Drawing.Size(672, 203);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

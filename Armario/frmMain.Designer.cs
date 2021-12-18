@@ -179,6 +179,7 @@
             this.barLinkContainerItemSettings.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItemSettings.ImageOptions.LargeImage")));
             this.barLinkContainerItemSettings.LargeWidth = 100;
             this.barLinkContainerItemSettings.Name = "barLinkContainerItemSettings";
+            this.barLinkContainerItemSettings.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barLinkContainerItemSettings_ItemClick);
             // 
             // barLinkContainerItemAddCustomer
             // 

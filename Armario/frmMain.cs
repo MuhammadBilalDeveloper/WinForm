@@ -121,5 +121,24 @@ namespace WinForm
                 MessageBox.Show(ex.Message, Utility.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void barLinkContainerItemSettings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                var form = Application.OpenForms["frmSettings"];
+                if (form == null)
+                {
+                    form = frmSettings.Getinstance;
+                    form.MdiParent = this;
+                    form.Show();
+                }
+                form.Activate();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, Utility.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
