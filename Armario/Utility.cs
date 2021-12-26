@@ -8,7 +8,7 @@ namespace WinForm
 {
     public static class Utility
     {
-        public static string ApplicationName = "WinForm";
+        public static string ApplicationName = "Coin Tracker";
         public static string DatabaseSelected = "MySQLServer";
     }
 }

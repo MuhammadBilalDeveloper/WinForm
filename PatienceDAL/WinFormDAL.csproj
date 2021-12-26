@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonRepositry.cs" />
+    <Compile Include="ICommonRepositry.cs" />
     <Compile Include="SQLServerCustomerRepositry.cs" />
     <Compile Include="ICustomerRepositry.cs" />
     <Compile Include="IInvoiceRepositry.cs" />

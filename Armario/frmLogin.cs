@@ -9,14 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormDAL;
+using WinFormEntity;
 
 namespace WinForm
 {
     public partial class frmLogin : DevExpress.XtraEditors.XtraForm
     {
-        public frmLogin()
+        private readonly ICommonRepositry _commonRepositry;
+        public frmLogin(ICommonRepositry commonRepositry)
         {
             InitializeComponent();
+            _commonRepositry = commonRepositry;
         }
         // Applying singelton pattern
         private static frmLogin instance;
@@ -25,19 +28,32 @@ namespace WinForm
             get
             {
                 if (instance == null || instance.IsDisposed)
-                    instance = new frmLogin();
+                    instance = new frmLogin(new CommonRepositry());
                 return instance;
             }
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
-            var  form = frmBinance.Getinstance;
-            if (form.ShowDialog(this) == DialogResult.OK)
+            var objuser = new Users();
+            objuser.Mail = textEdit1.Text.Trim();
+            objuser.Password = textEdit2.Text.Trim();
+            DataTable dt= _commonRepositry.GetUser(objuser);
+            if (dt.Rows.Count > 0)
             {
-                this.DialogResult = DialogResult.OK;
-                this.Close();
+                var form = frmBinance.Getinstance;
+                if (form.ShowDialog(this) == DialogResult.OK)
+                {
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+                }
             }
+            else 
+            {
+                XtraMessageBox.Show("Email or Password is not correct.Please try again.", Utility.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            
 
            
         }
